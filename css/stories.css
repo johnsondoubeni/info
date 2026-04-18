@@ -1,0 +1,85 @@
+/* HERO */
+.stories-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+.stories-hero h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.stories-hero p {
+  color: #94a3b8;
+}
+
+/* GRID */
+.stories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+/* CARD */
+.story-card {
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.story-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+/* TEXT */
+.story-card h2 {
+  margin-bottom: 10px;
+}
+
+.story-card p {
+  color: #cbd5f5;
+  margin-bottom: 15px;
+}
+
+/* LINK */
+.story-card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.story-card a:hover {
+  text-decoration: underline;
+}
+
+/* SUBTLE GLOW */
+.story-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(56,189,248,0.12), transparent 70%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.story-card:hover::before {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stories-container {
+    padding: 20px;
+  }
+}

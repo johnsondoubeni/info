@@ -1,272 +1,89 @@
+<!-- ===================== index.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/search.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Blog Home</title>
+<link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-    <header class="m-1">
-        <nav class="navigation max-width-1  margin-auto">
-            <div class="navLeft">
-                <a href="/blog-in-html-css/index.html">
 
-                    Logo
-                </a>
-            </div>
-            <div class="navCenter">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="/blog-in-html-css/index.html">Home</a></li>
+<!-- HEADER -->
+<header>
+  <nav>
+    <div class="logo">MyBlog</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Blog</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-                    <li class="nav-item"><a href="/blog-in-html-css/contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <form action="/blog-in-html-css/search.html">
-                <div class="navRight">
-                    <input type="search" name="query" class="form-input " placeholder="Search Hear">
-                    <button class="btn btn-pink" type="submit">Search </button>
-                </div>
-            </form>
-        </nav>
-    </header>
-    <main>
-        <div class="content max-width-95 margin-auto">
-            <div class="content-left">
-                <h1 class="m-1">Typing</h1>
-                <p>The basic technique stands in contrast to hunt and peck typing in which the typist keeps their eyes
-                    on the source copy at all times. Touch typing also involves the use of the home row method, where
-                    typists rest their wrist down, rather than lifting up and typing (which can cause carpal tunnel
-                    syndrome). To avoid this, typists should sit up tall, leaning slightly forward from the waist, place
-                    their feet flat on the floor in front of them with one foot slightly in front of the other, and keep
-                    their elbows close to their sides with forearms slanted slightly upward to the keyboard; fingers
-                    should be curved slightly and rest on the home row.</p>
-            </div>
-            <div class="content-right m-2">
-                <img src="img/home.svg" alt="000">
-            </div>
-        </div>
-        <div class="max-width-1 margin-auto ">
-            <hr>
-        </div>
-        <div class="home-div-articles p-3">
-            <div class="m-2">
+<!-- HERO -->
+<section class="hero">
+  <h1>Build Your Story. Share Your Voice.</h1>
+  <p>A premium blog experience powered by simplicity</p>
+  <button>Get Started</button>
+</section>
 
-                <h2>Featured Articles</h2>
-                <div class="yearBox">
-                    <div>
-                        <h4>Date</h4>
+<!-- SERVICES -->
+<section class="services">
+  <h2>What You Can Do Here</h2>
+  <div class="service-grid">
+    <div class="service-box">Write Blog Posts</div>
+    <div class="service-box">Share Stories</div>
+    <div class="service-box">Connect With Readers</div>
+  </div>
+</section>
 
-                    </div>
-                    <div>
+<!-- BLOG PREVIEW (5 POSTS SPACE) -->
+<section class="blog-preview">
+  <h2>Latest Posts</h2>
 
-                        <label for="2020">2020</label>
-                        <input type="radio" name="Year" id="2020">
-                    </div>
-                    <div>
-                        <label for="2021">2021</label>
+  <div class="post">Paste Blog Post 1 here...</div>
+  <div class="post">Paste Blog Post 2 here...</div>
+  <div class="post">Paste Blog Post 3 here...</div>
+  <div class="post">Paste Blog Post 4 here...</div>
+  <div class="post">Paste Blog Post 5 here...</div>
 
-                        <input type="radio" name="Year" id="2021">
-                    </div>
-                </div>
-            </div>
-            <div class="home-articles ">
-    
-                <div class="home-article center">
-                    <a href="/blog-in-html-css/blogpost.html" class="text-center">
+</section>
 
-                        <img src="img/coffee.jpg " alt="">
-                        <div class="home-article-bottom m-1">
-                            <h3>Title</h3>
-                            <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse
-                                repellendus nulla
-                                eius placeat eos dicta, dolore corporis sed voluptatem consequuntur similique! Nulla,
-                                incidunt! Amet perferendis consequatur maiores? Quia eum, tempore autem aliquam,
-                                necessitatibus neque molestias repudiandae cumque rerum at nulla, molestiae praesentium.
-                                Eius soluta itaque corrupti vitae optio expedita.</p>
-                            <div class="article-info-div text-muted">
-                                <span class="m-1">Author </span><br><span> Date | </span><span> 7 min read</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="home-article center">
-                    <a href="/blog-in-html-css/blogpost.html" class="text-center">
+<!-- SPLIT SECTION -->
+<section class="split">
+  <div class="split-box">
+    <h3>Grow Your Audience</h3>
+    <p>Write engaging content and build your presence online.</p>
+  </div>
+  <div class="split-box">
+    <h3>Stay Consistent</h3>
+    <p>Keep publishing and improve your SEO rankings.</p>
+  </div>
+</section>
 
+<!-- ABOUT -->
+<section class="about">
+  <div>
+    <h2>About This Blog</h2>
+    <p>This platform is designed for writers, creators, and storytellers who want a clean and powerful blog.</p>
+  </div>
+  <div class="about-img">Image Placeholder</div>
+</section>
 
-                        <img src="img/coffee.jpg " alt="">
-                        <div class="home-article-bottom m-1">
-                            <h3>Title</h3>
-                            <p class="m-1">SEO ARTICLE
-Fruits: The Ultimate Guide to Health Benefits, Types, Nutrition, and Daily Use
-Introduction
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Me</h2>
+  <input type="text" placeholder="Enter your email">
+  <button>Send</button>
+</section>
+  
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MyBlog. All rights reserved.</p>
+</footer>
 
-Fruits are among the most essential components of a healthy diet. Rich in vitamins, minerals, fiber, and antioxidants, fruits play a critical role in maintaining overall health and preventing diseases. Whether eaten fresh, dried, or blended into juices and smoothies, fruits offer a natural and delicious way to nourish the body.
-
-In today’s fast-paced world, many people overlook the importance of consuming fruits daily. However, incorporating fruits into your diet can significantly improve digestion, boost immunity, enhance skin health, and reduce the risk of chronic illnesses such as heart disease and diabetes.
-
-This comprehensive guide explores everything you need to know about fruits, including their types, nutritional value, health benefits, and how to include them in your daily routine.
-
-🍎 What Are Fruits?
-
-Botanically, fruits are the mature ovaries of flowering plants that contain seeds. In everyday terms, fruits are sweet or sour edible plant products that are often consumed raw.
-
-Fruits come in various shapes, colors, and flavors, making them one of the most diverse food groups available. From tropical fruits like mangoes and pineapples to temperate fruits like apples and berries, each fruit offers unique health benefits.
-
-🍌 Types of Fruits
-
-Fruits can be classified into several categories based on their structure and characteristics.
-
-1. Citrus Fruits
-
-Examples include oranges, lemons, limes, and grapefruits. These fruits are rich in vitamin C and are known for boosting immunity.
-
-2. Tropical Fruits
-
-Common in regions like Africa and Asia, examples include mangoes, bananas, pineapples, and papayas. These fruits are packed with nutrients and natural sugars for energy.
-
-3. Berries
-
-Strawberries, blueberries, raspberries, and blackberries fall into this category. They are rich in antioxidants and support brain health.
-
-4. Stone Fruits
-
-These fruits contain a large seed or “stone” inside. Examples include peaches, plums, cherries, and apricots.
-
-5. Melons
-
-Watermelon, cantaloupe, and honeydew are hydrating fruits with high water content.
-
-🍇 Nutritional Value of Fruits
-
-Fruits are naturally low in calories and fat but high in essential nutrients such as:
-
-Vitamins: Especially vitamins A, C, and K
-Minerals: Potassium, magnesium, and calcium
-Fiber: Helps digestion and prevents constipation
-Antioxidants: Protect cells from damage
-
-Because of their nutrient density, fruits are considered one of the healthiest food choices available.
-
-🥭 Health Benefits of Fruits
-1. Boosts Immune System
-
-Fruits rich in vitamin C help the body fight infections and strengthen immunity.
-
-2. Improves Digestion
-
-Fiber in fruits aids digestion and promotes a healthy gut.
-
-3. Supports Heart Health
-
-Many fruits help lower blood pressure and cholesterol levels.
-
-4. Enhances Skin Health
-
-Antioxidants found in fruits help maintain glowing and youthful skin.
-
-5. Aids Weight Management
-
-Fruits are low in calories but filling, making them ideal for weight loss diets.
-
-🍍 Fruits in Daily Diet
-
-Including fruits in your daily meals is easier than you think. Here are some simple ways:
-
-Eat fresh fruits as snacks
-Add fruits to your breakfast (oats, cereal, or yogurt)
-Blend fruits into smoothies
-Use fruits in salads
-Drink natural fruit juices (without added sugar)
-
-Consistency is key to enjoying the full benefits of fruits.
-
-🍉 Popular Fruits Around the World
-
-Different regions have their favorite fruits:
-
-Africa: Mango, pineapple, banana
-Europe: Apple, pear, berries
-Asia: Dragon fruit, lychee, durian
-America: Blueberries, strawberries, avocado
-
-Each fruit reflects the climate and culture of its region.
-
-🍒 Common Mistakes People Make
-Skipping fruits due to busy schedules
-Drinking processed juices instead of fresh fruits
-Eating too few varieties
-Overconsumption of sugary fruit juices
-
-Balancing fruit intake is important for maximum benefits.
-
-🧠 Tips for Choosing Fresh Fruits
-Look for bright, natural colors
-Avoid bruised or overly soft fruits
-Check for natural aroma
-Buy seasonal fruits for better taste and nutrition
-🍑 Conclusion
-
-Fruits are a vital part of a balanced and healthy lifestyle. They provide essential nutrients, improve overall well-being, and help prevent diseases. By making fruits a regular part of your diet, you can enjoy better health, increased energy, and improved quality of life.
-
-Whether you prefer sweet tropical fruits or refreshing citrus options, there is a fruit for everyone. Start incorporating more fruits into your meals today and experience the difference.</p>
-                            <div class="article-info-div text-muted">
-                                <span class="m-1">Author </span><br><span> Date | </span><span> 7 min read</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="home-article center">
-                    <a href="/blog-in-html-css/blogpost.html" class="text-center">
-
-
-                        <img src="img/business.jpg " alt="">
-                        <div class="home-article-bottom m-1">
-                            <h3>Title</h3>
-                            <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse
-                                repellendus nulla
-                                eius placeat eos dicta, dolore corporis sed voluptatem consequuntur similique! Nulla,
-                                incidunt! Amet perferendis consequatur maiores? Quia eum, tempore autem aliquam,
-                                necessitatibus neque molestias repudiandae cumque rerum at nulla, molestiae praesentium.
-                                Eius soluta itaque corrupti vitae optio expedita.</p>
-                            <div class="article-info-div text-muted">
-                                <span>Author |</span><span> Date | </span><span> 7 min read</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="home-article center">
-                    <a href="/blog-in-html-css/blogpost.html" class="text-center">
-
-
-                        <img src="img/business.jpg " alt="">
-                        <div class="home-article-bottom m-1">
-                            <h3>Title</h3>
-                            <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse
-                                repellendus nulla
-                                eius placeat eos dicta, dolore corporis sed voluptatem consequuntur similique! Nulla,
-                                incidunt! Amet perferendis consequatur maiores? Quia eum, tempore autem aliquam,
-                                necessitatibus neque molestias repudiandae cumque rerum at nulla, molestiae praesentium.
-                                Eius soluta itaque corrupti vitae optio expedita.</p>
-                            <div class="article-info-div text-muted">
-                                <span>Author |</span><span> Date | </span><span> 7 min read</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </main>
-    <footer class="center">
-        &copy;  2026 | Jonsnon
-
-    </footer>
 </body>
-
 </html>
+

@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/search.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - MyBlog</title>
+
+  <!-- Global + Contact CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
-    <header class="m-1">
-        <nav class="navigation max-width-1  margin-auto">
-            <div class="navLeft">Logo</div>
-            <div class="navCenter">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="/blog-in-html-css/index.html">Home</a></li>
 
-                    <li class="nav-item"><a href="/blog-in-html-css/contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <form action="/blog-in-html-css/search.html">
-                <div class="navRight">
-                    <input type="search" name="query" class="form-input " placeholder="Search Hear">
-                    <button class="btn btn-pink">Search </button>
-                </div>
-            </form>
-        </nav>
-    </header>
-    <main class="m-1">
-        <div class="max-width-1  margin-auto">
+<!-- HEADER -->
+<header>
+  <nav>
+    <div class="logo">MyBlog</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Blog</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-            <h1 class="m-1">Contact Us</h1>
-            <div class="contactDiv">
-                <div class="form-content">
-                    <label for="name">Enter your name</label>
-                    <input type="text" id="name" class="form-input" placeholder="Enter your name">
-                </div>
-                <div class="form-content">
-                    <label for="email">Enter your email</label>
-                    <input type="email" id="email" class="form-input" placeholder="Enter your email">
-                </div>
-                <div class="form-content">
-                    <label for="tel">Enter your contact number</label>
-                    <input type="tel" id="tel" class="form-input" placeholder="Enter your contact number">
-                </div>
-                <div class="form-content">
-                    <label for="textarea">Enter your message</label>
-                    <textarea name="textarea" id="textarea" cols="20" class="form-input" rows="10"
-                        placeholder="Enter Your Text Hear"></textarea>
-                </div>
-                <div class="m-2">
+<!-- HERO -->
+<section class="contact-hero">
+  <h1>Get In Touch</h1>
+  <p>Have questions, ideas, or want to collaborate?</p>
+</section>
 
-                    <button class="btn btn-pink" type="submit">Submit</button>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="center">
-        &copy;  2026 | Jonsnon
+<!-- CONTACT SECTION -->
+<main class="contact-container">
 
-    </footer>
+  <!-- CONTACT FORM -->
+  <div class="contact-form">
+    <h2>Send a Message</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> your@email.com</p>
+    <p><strong>Phone:</strong> +234 xxx xxx xxxx</p>
+    <p><strong>Location:</strong> Nigeria</p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MyBlog. All rights reserved.</p>
+</footer>
+
 </body>
-
 </html>
